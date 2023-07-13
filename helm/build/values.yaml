@@ -1,0 +1,15 @@
+app:
+  name: bhimalin-poi-gateway-app
+  namespace: bhimalin
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/bhimalin-gateway
+  org: rosa916-rvhvd
+  name: bhimalin-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: bhimalin/poi-gateway-app
+  tag: latest
